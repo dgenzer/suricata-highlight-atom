@@ -11,7 +11,7 @@
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(ttl|ipopts|sameip|ip_proto|id|geoip|fragbits|fragoffset)'
+    'match': '\\b(ttl|ipopts|sameip|ip_proto|id|geoip|fragbits|fragoffset|tos)'
   }
   {
     'name': 'storage.type.option.suricata'
@@ -23,11 +23,11 @@
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(content|nocase|depth|startswith|offset|distance|within|isdataat|dsize|rpc|replace)'
+    'match': '\\b(content|nocase|depth|startswith|offset|distance|within|isdataat|dsize|rpc|replace|byte_test|byte_jump|byte_extract)'
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(fstrip_whitespace|compress_whitespace|to_sha256)'
+    'match': '\\b(fstrip_whitespace|compress_whitespace|to_sha256|to_md5|to_sha1)'
   }
   {
     'name': 'storage.type.option.suricata'
@@ -43,11 +43,11 @@
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(http_uri|http_raw_uri|http_method|http_client_body|http_header|http_raw_header|http_cookie|http_user_agent|http_host|http_raw_host|http_stat_msg|http_stat_code|http_server_body)'
+    'match': '\\b(http_uri|http_raw_uri|http_method|http_client_body|http_header|http_raw_header|http_cookie|http_user_agent|http_host|http_raw_host|http_stat_msg|http_stat_code|http_server_body|http\\.server|http\\.location)'
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(http_request_line|http_accept|http_accept_lang|http_accept_enc|http_referer|http_connection|http_content_type|http_content_len|http_start|http_protocol|http_header_names|http_response_line|file_data)'
+    'match': '\\b(http_request_line|http_accept|http_accept_lang|http_accept_enc|http_referer|http_connection|http_content_type|http_content_len|http_start|http_protocol|http_header_names|http_response_line|file_data|http\\.protocol)'
   }
   {
     'name': 'storage.type.option.suricata'
@@ -63,15 +63,15 @@
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(tls_cert_subject|tls_cert_issuer|tls_cert_serial|tls_cert_fingerprint|tls_sni)'
+    'match': '\\b(tls_cert_subject|tls_cert_issuer|tls_cert_serial|tls_cert_fingerprint|tls_sni|tls\\.cert_subject|tls\\.cert_issuer|tls\\.cert_serial|tls\\.cert_fingerprint|tls\\.sni)'
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(ssh_proto|ssh_software)'
+    'match': '\\b(ssh_proto|ssh_software|ssh\\.proto|ssh\\.sofware)'
   }
   {
     'name': 'storage.type.option.suricata'
-    'match': '\\b(ja3_hash|ja3_string)'
+    'match': '\\b(ja3_hash|ja3_string|ja3\\.hash|ja3\\.string)'
   }
   {
     'name': 'storage.type.option.suricata'
@@ -153,7 +153,7 @@
   }
   {
     'name': 'keyword.other.protocol.suricata'
-    'match': '\\b(tcp|udp|icmp|ip|http|ftp|tls|smb|dns|dcerpc|ssh|smtp|imap|msn|modbus|dnp3|enip|nfs|ikev2|krb5|ntp|dhcp)\\b'
+    'match': '\\b(tcp|udp|icmp|ip|http|ftp\\-data|ftp|tls|smb|dns|dcerpc|ssh|smtp|imap|msn|modbus|dnp3|enip|nfs|ikev2|krb5|ntp|dhcp)\\b'
   }
   {
     'name': 'variable.parameter.ipaddress.suricata'
